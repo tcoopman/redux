@@ -62,11 +62,12 @@ class RepoPage extends Component {
 }
 
 RepoPage.propTypes = {
-  repo: PropTypes.object,
   fullName: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   stargazers: PropTypes.array.isRequired,
   stargazersPagination: PropTypes.object,
+  repo: PropTypes.object,
+  owner: PropTypes.object,
   loadRepo: PropTypes.func.isRequired,
   loadStargazers: PropTypes.func.isRequired
 };
